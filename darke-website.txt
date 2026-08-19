@@ -1,0 +1,267 @@
+darke-website/
+│
+├── index.html
+└── logo.png
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DARKE OFFICIAL | Coming Soon</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 50% 25%, #242424 0%, #111111 42%, #050505 100%);
+    color: #ffffff;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.tagline {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+
+    color: #a8a8a8;
+
+    margin-bottom: 55px;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 520px;
+
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid #444;
+    background: rgba(255,255,255,0.03);
+}
+
+.signup-form input {
+    flex: 1;
+
+    min-width: 0;
+    padding: 17px 18px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 0.95rem;
+}
+
+.signup-form input::placeholder {
+    color: #777;
+}
+
+.signup-form button {
+    padding: 17px 28px;
+
+    border: none;
+
+    background: #ffffff;
+    color: #000000;
+
+    cursor: pointer;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    letter-spacing: 0.15em;
+
+    transition: all 0.25s ease;
+}
+
+.signup-form button:hover {
+    background: #d8d8d8;
+}
+
+.socials {
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socials a {
+    color: #777;
+    text-decoration: none;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+
+    transition: color 0.25s ease;
+}
+
+.socials a:hover {
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 80px;
+
+    color: #555;
+    font-size: 0.7rem;
+
+    letter-spacing: 0.15em;
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        width: 180px;
+        margin-bottom: 60px;
+    }
+
+    h1 {
+        letter-spacing: 0.08em;
+    }
+
+    .tagline {
+        letter-spacing: 0.2em;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        border: none;
+        gap: 10px;
+    }
+
+    .signup-form input {
+        width: 100%;
+        border: 1px solid #444;
+        text-align: center;
+    }
+
+    .signup-form button {
+        width: 100%;
+    }
+
+    .socials {
+        gap: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img
+        src="./logo.png"
+        alt="DARKE Official"
+        class="logo"
+    >
+
+    <h1>COMING SOON</h1>
+
+    <div class="tagline">
+        Built for what comes next.
+    </div>
+
+    <form class="signup-form" onsubmit="return false;">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button type="submit">
+            NOTIFY ME
+        </button>
+
+    </form>
+
+    <div class="socials">
+
+        <a
+            href="https://instagram.com/DarkeOFFICIAL"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            INSTAGRAM
+        </a>
+
+        <a
+            href="https://tiktok.com/@DarkeOFFICIAL"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            TIKTOK
+        </a>
+
+        <a
+            href="https://facebook.com/Darke"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            FACEBOOK
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 DARKE OFFICIAL. ALL RIGHTS RESERVED.
+    </div>
+
+</div>
+
+</body>
+</html>
